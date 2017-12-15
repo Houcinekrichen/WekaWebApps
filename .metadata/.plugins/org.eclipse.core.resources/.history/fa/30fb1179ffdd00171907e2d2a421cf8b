@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Custom CSS -->
+<link href="css/sb-admin.css" rel="stylesheet" />
+
+
+
+
+<script type="text/javascript"
+	src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" th:inline="javascript">
+    
+ 
+    
+    
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      
+    
+      
+      function drawChart() {
+    	   /*<![CDATA[*/
+
+    	    var theList = [[${data1}]]
+    	    var data = new Array()
+    	    data.push(new Array('houcine',"krichen"))
+    	    
+    	    for (i = 0; i < theList.length; i++) {
+    	    	 
+    	    	data.push(new Array(''+theList[i].className,theList[i].occ));
+    	        console.log(theList[i].occ);
+    	    }
+
+
+    	    /*]]>*/  
+    	  
+    	  
+    	  
+        var data = google.visualization.arrayToDataTable(data)
+
+        var options = {
+          title: 'List classes',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+        
+        
+      }
+      
+      var message = [[${message}]];
+      console.log(message);
+      
+  
+
+      
+    </script>
+
+
+</head>
+<body>
+
+	<label>Choix algorithme de classification :</label>
+	<div >
+		<span class="custom-dropdown custom-dropdown--white"> <select
+			class="custom-dropdown__select custom-dropdown__select--white">
+				<option>Arbre de déscision</option>
+				<option>Naif Base</option>
+				<option>Forêt aléatoire</option>
+
+		</select>
+		</span>
+
+		<button type="submit" class="btn btn-primary">valider</button>
+
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<h3>visualisation</h3>
+			<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+
+
+
+		</div>
+
+		<div class="col-md-6">
+			<h3>Démenstration</h3>
+			<textarea class="border: none" rows="30" cols="100" th:text="${demo}"></textarea>
+		</div>
+	</div>
+
+
+	<br />
+	<br />
+
+</body>
+</html>

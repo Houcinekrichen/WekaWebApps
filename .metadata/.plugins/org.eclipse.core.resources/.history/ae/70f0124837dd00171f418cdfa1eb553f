@@ -1,0 +1,42 @@
+package com.weka.web;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.google.gson.Gson;
+
+@Controller
+public class Contoller {
+	
+	@RequestMapping("/index")
+	public String validerCompte(Model model ) {
+
+		List<Class> ls = new ArrayList<>();
+		
+		Class cl = new Class() ;
+		Class c2 = new Class() ;
+		
+		cl.setClassName("Houcine");
+		cl.setOcc(50);
+		
+		c2.setClassName("Krichen");
+		c2.setOcc(50);
+		
+		
+		ls.add(cl);
+		ls.add(c2);
+		
+		String json = new Gson().toJson(ls );
+		
+		model.addAttribute("data1", ls);
+		model.addAttribute("message", "aaaaaaaaa");
+		
+		return ("index");
+	}
+
+
+}

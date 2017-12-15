@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="weka.core.converters.ArffLoader"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="weka.core.converters.CSVSaver"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="weka.Class"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="scala.annotation.implicitNotFound"/>
+<fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.weka.web.Class"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="weka.classifiers.Classifier"/>
+<fullyQualifiedTypeName name="weka.classifiers.trees.J48"/>
+<fullyQualifiedTypeName name="weka.classifiers.bayes.NaiveBayes"/>
+<fullyQualifiedTypeName name="weka.classifiers.trees.RandomForest"/>
+<fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="weka.classifiers.evaluation.Evaluation"/>
+<fullyQualifiedTypeName name="weka.classifiers.lazy.IBk"/>
+</qualifiedTypeNameHistroy>

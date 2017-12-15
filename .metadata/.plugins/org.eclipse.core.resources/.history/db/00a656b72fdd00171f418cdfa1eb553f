@@ -1,0 +1,27 @@
+package com.weka.web;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class Contoller {
+	
+	@RequestMapping("/index")
+	public String validerCompte(Model model ) {
+
+		List<Class> ls = new ArrayList<>();
+		Class cl = new Class() ;
+		cl.setClassName("aaa");
+		cl.setOcc(200);
+		ls.add(cl);
+		model.addAttribute("data", ls);
+
+		return ("index");
+	}
+
+
+}

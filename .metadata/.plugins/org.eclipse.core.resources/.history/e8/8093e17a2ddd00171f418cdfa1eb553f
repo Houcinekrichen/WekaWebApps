@@ -1,0 +1,19 @@
+package com.weka.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class Contoller {
+	
+	@RequestMapping("/index")
+	public String validerCompte(Model model ) {
+
+		List<>
+
+		return ("index");
+	}
+
+
+}
